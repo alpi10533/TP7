@@ -30,7 +30,7 @@ public class Blockchain {
             wallet.setIsepCoins(10);
             wallets.add(wallet);
         }
-        for (int i = 0; i < 20; ++i) {
+        for (int i = 0; i < 55; ++i) {
             int rand1 = new Random().nextInt(users.length);
             int rand2 = new Random().nextInt(users.length);
             if (blocks.get(blocks.size()-1).addTransaction(wallets.get(rand1), wallets.get(rand2), 1) != 0) {
